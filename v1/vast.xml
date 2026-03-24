@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="torder-int-001">
+    <InLine>
+      <AdSystem>TorderINT</AdSystem>
+      <AdTitle>Torder Interactive Survey Ad</AdTitle>
+      <Impression><![CDATA[https://YOUR_TRACKING_DOMAIN/impression]]></Impression>
+      <Creatives>
+        <Creative sequence="1" id="companion-creative-1">
+          <CompanionAds>
+            <Companion id="companion-1" width="1280" height="800">
+              <HTMLResource><![CDATA[https://YOUR_CLOUDFRONT_DOMAIN/int-survey/v1/index.html]]></HTMLResource>
+              <CompanionClickThrough><![CDATA[https://YOUR_LANDING_DOMAIN/clickthrough]]></CompanionClickThrough>
+            </Companion>
+          </CompanionAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

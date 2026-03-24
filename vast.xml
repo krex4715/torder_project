@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+  <Ad id="torder-int-001">
+    <InLine>
+      <AdSystem>TorderINT</AdSystem>
+      <AdTitle>Torder Interactive Ad</AdTitle>
+      <Impression><![CDATA[https://example.com/impression]]></Impression>
+      <Creatives>
+        <Creative sequence="1" id="companion-creative-1">
+          <CompanionAds>
+            <Companion id="companion-1" width="1080" height="1920">
+              <HTMLResource><![CDATA[https://example.com/index.html]]></HTMLResource>
+              <CompanionClickThrough><![CDATA[https://example.com/clickthrough]]></CompanionClickThrough>
+            </Companion>
+          </CompanionAds>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

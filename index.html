@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Torder INT Ad Player</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="app" aria-live="polite">
+      <header class="top-bar">
+        <div class="brand">TORDER x INT</div>
+        <div class="top-actions">
+          <button id="touch-exit-btn" class="ghost-btn" type="button" aria-label="이탈 영역 터치 종료">이탈 종료</button>
+          <button id="close-btn" class="ghost-btn" type="button" aria-label="광고 닫기">닫기</button>
+        </div>
+      </header>
+
+      <section id="view-start" class="view active" data-view="start">
+        <p class="kicker">INT_PLAY 대기중</p>
+        <h1 class="title">설문 광고 준비 완료</h1>
+        <p class="desc">INT_PLAY 수신 후, 아래 버튼을 눌러 설문을 시작하세요.</p>
+        <button id="start-btn" class="primary-btn" type="button">설문 시작</button>
+      </section>
+
+      <section id="view-question" class="view" data-view="question">
+        <p id="question-step" class="kicker">질문 1 / 3</p>
+        <h2 id="question-title" class="title">질문 제목</h2>
+        <div id="answer-list" class="answer-list" role="listbox" aria-label="설문 답변"></div>
+      </section>
+
+      <section id="view-result" class="view" data-view="result">
+        <p class="kicker">개인화 결과</p>
+        <h2 id="result-title" class="title">결과 제목</h2>
+        <p id="result-body" class="desc">결과 메시지</p>
+        <button id="lead-btn" class="primary-btn" type="button">신청하기</button>
+      </section>
+
+      <section id="view-lead" class="view" data-view="lead">
+        <p class="kicker">리드 입력</p>
+        <h2 class="title">연락처를 남겨주세요</h2>
+        <form id="lead-form" novalidate>
+          <label class="field-label" for="name">이름</label>
+          <input id="name" name="name" class="field" type="text" autocomplete="name" required />
+
+          <label class="field-label" for="phone">연락처</label>
+          <input id="phone" name="phone" class="field" type="tel" inputmode="tel" required />
+
+          <label class="field-label" for="age">나이</label>
+          <input id="age" name="age" class="field" type="number" min="14" max="99" required />
+
+          <label class="field-label" for="gender">성별</label>
+          <select id="gender" name="gender" class="field" required>
+            <option value="">선택</option>
+            <option value="female">여성</option>
+            <option value="male">남성</option>
+            <option value="other">기타</option>
+          </select>
+
+          <label class="field-label" for="email">이메일</label>
+          <input id="email" name="email" class="field" type="email" autocomplete="email" required />
+
+          <label class="consent-row">
+            <input id="consent" name="consent" type="checkbox" required />
+            <span>개인정보 수집 및 이용에 동의합니다.</span>
+          </label>
+
+          <button id="submit-btn" class="primary-btn" type="submit">제출하기</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
