@@ -4,13 +4,13 @@
     <InLine>
       <AdSystem>TorderINT</AdSystem>
       <AdTitle>Torder Interactive Survey Ad</AdTitle>
-      <Impression><![CDATA[https://YOUR_TRACKING_DOMAIN/impression]]></Impression>
+      <Impression><![CDATA[https://d35srp0rdv1wp8.cloudfront.net/v1/impression]]></Impression>
       <Creatives>
         <Creative sequence="1" id="companion-creative-1">
           <CompanionAds>
             <Companion id="companion-1" width="1280" height="800">
-              <HTMLResource><![CDATA[https://YOUR_CLOUDFRONT_DOMAIN/int-survey/v1/index.html]]></HTMLResource>
-              <CompanionClickThrough><![CDATA[https://YOUR_LANDING_DOMAIN/clickthrough]]></CompanionClickThrough>
+              <HTMLResource><![CDATA[https://d35srp0rdv1wp8.cloudfront.net/v1/index.html]]></HTMLResource>
+              <CompanionClickThrough><![CDATA[https://d35srp0rdv1wp8.cloudfront.net/v1/clickthrough]]></CompanionClickThrough>
             </Companion>
           </CompanionAds>
         </Creative>

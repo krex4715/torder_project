@@ -3,14 +3,14 @@
   <Ad id="torder-int-001">
     <InLine>
       <AdSystem>TorderINT</AdSystem>
-      <AdTitle>Torder Interactive Ad</AdTitle>
-      <Impression><![CDATA[https://example.com/impression]]></Impression>
+      <AdTitle>Torder Interactive Survey Ad</AdTitle>
+      <Impression><![CDATA[https://d35srp0rdv1wp8.cloudfront.net/v1/impression]]></Impression>
       <Creatives>
         <Creative sequence="1" id="companion-creative-1">
           <CompanionAds>
-            <Companion id="companion-1" width="1080" height="1920">
-              <HTMLResource><![CDATA[https://example.com/index.html]]></HTMLResource>
-              <CompanionClickThrough><![CDATA[https://example.com/clickthrough]]></CompanionClickThrough>
+            <Companion id="companion-1" width="1280" height="800">
+              <HTMLResource><![CDATA[https://d35srp0rdv1wp8.cloudfront.net/v1/index.html]]></HTMLResource>
+              <CompanionClickThrough><![CDATA[https://d35srp0rdv1wp8.cloudfront.net/v1/clickthrough]]></CompanionClickThrough>
             </Companion>
           </CompanionAds>
         </Creative>
